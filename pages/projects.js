@@ -120,13 +120,13 @@ const Projects = ({ isDarkBg }) => {
         <div className="margin-top-10">
           <ul className="ul-disc w-78">
             <li className="m-all-10">
-              Developed a 'View Similar' widget using React JS for the client-side and Node JS for the server-side. This widget helps users discover products similar to the ones they're viewing, with filters for style, brand, price, and color.
+              Developed a &apos;View Similar&apos; widget using React JS for the client-side and Node JS for the server-side. This widget helps users discover products similar to the ones they&apos;re viewing, with filters for style, brand, price, and color.
             </li>
             <li className="m-all-10">
-              To ensure smooth functionality, I employed React JS's create portal feature to seamlessly manage interactions between icons and screens across two separate components.
+              To ensure smooth functionality, I employed React JS&apos;s create portal feature to seamlessly manage interactions between icons and screens across two separate components.
             </li>
             <li className="m-all-10">
-              One of the key accomplishments was adapting the widget's UI to fit various screen sizes, including mobile sites and desktop layouts. Additionally, I implemented robust error handling to gracefully manage scenarios like when no products match the selected filters.
+              One of the key accomplishments was adapting the widget&apos;s UI to fit various screen sizes, including mobile sites and desktop layouts. Additionally, I implemented robust error handling to gracefully manage scenarios like when no products match the selected filters.
             </li>
             <li className="m-all-10">
               Overall, the widget enhances the user experience by providing intuitive access to related products, regardless of device or filter criteria.
