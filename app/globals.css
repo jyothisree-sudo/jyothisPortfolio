@@ -179,6 +179,7 @@ nav {
 
 .navbar_container_logo {
     display: block;
+    margin-left: -2rem;
 }
 
 nav svg {
