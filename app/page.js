@@ -7,9 +7,7 @@ import Projects from '@/pages/projects';
 import { useState, useRef, useEffect } from 'react';
 
 export default function Home() {
-  // Refs for elements
-  const aboutParentDivRef = useRef(null);
-  const projectsParentDivRef = useRef(null);
+  
 
   const [isDarkBg, setIsDarkBg] = useState(true);
   const [showPage, setShowPage] = useState('home');
@@ -59,17 +57,6 @@ export default function Home() {
     setToggledIcon((prevState) => !prevState);
   };
 
-  // Cleanup event listeners when component unmounts
-  useEffect(() => {
-    return () => {
-      if (aboutParentDivRef.current) {
-        aboutParentDivRef.current.removeEventListener('click', scrollToTop);
-      }
-      if (projectsParentDivRef.current) {
-        projectsParentDivRef.current.removeEventListener('click', scrollToTop);
-      }
-    };
-  }, []);
 
   return (
     <>
@@ -82,8 +69,8 @@ export default function Home() {
         toggledIcon={toggledIcon}
       />
       {showPage === 'home' && <HomeComponent isDarkBg={isDarkBg} />}
-      {showPage === 'about' && <AboutPage isDarkBg={isDarkBg} ref={aboutParentDivRef} />}
-      {showPage === 'projects' && <Projects isDarkBg={isDarkBg} ref={projectsParentDivRef} />}
+      {showPage === 'about' && <AboutPage isDarkBg={isDarkBg}  />}
+      {showPage === 'projects' && <Projects isDarkBg={isDarkBg}  />}
     </>
   );
 }
