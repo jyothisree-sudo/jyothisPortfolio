@@ -122,7 +122,7 @@ export default function About({ isDarkBg, ref }) {
               <ul className="ul-disc desc">
                 <li className="m-all-10">
                   As a web developer at AJIO, I focus on feature development and maintaining code integrity while using React and Node.js frameworks.
-                  I tackle production issues promptly, implement error-handling strategies, and contribute to enhancing AJIO's website technology stack.
+                  I tackle production issues promptly, implement error-handling strategies, and contribute to enhancing AJIO&apos;s website technology stack.
                 </li>
               </ul>
             </div>
@@ -132,17 +132,17 @@ export default function About({ isDarkBg, ref }) {
               </div>
               <ul className="ul-disc desc">
                 <li className="m-all-10">
-                  As a Web developer of the Zivame's Tech team, Taking on various tasks such as feature development, ensuring code consistency, implementing
+                  As a Web developer of the Zivame&apos;s Tech team, Taking on various tasks such as feature development, ensuring code consistency, implementing
                   robust error handling mechanisms, and swiftly addressing production issues and bugs. Utilizing React and Node.js frameworks to build and maintain
-                  features, contributing to the overall technological advancement of Zivame's Website.
+                  features, contributing to the overall technological advancement of Zivame&apos;s Website.
                 </li>
                 <li className="m-all-10">
-                  Contributing to the creation of impactful widgets like "View Similar," "NPS," and "Bank Downtime", enhancing the overall user experience on
+                  Contributing to the creation of impactful widgets like &quot;View Similar,&quot; &quot;NPS,&quot; and &quot;Bank Downtime,&quot; enhancing the overall user experience on
                   the platform. I also led the integration of GrowthBooks, an A/B testing tool, to drive continuous improvement and optimization efforts.
                 </li>
                 <li className="m-all-10">
                   Commitment to excellence and focus on delivering high-quality solutions have been pivotal in maintaining a seamless and reliable user
-                  experience on the platform. I aim to continue enhancing Zivame's technological capabilities through meticulous and innovative coding practices.
+                  experience on the platform. I aim to continue enhancing Zivame&apos;s technological capabilities through meticulous and innovative coding practices.
                 </li>
               </ul>
             </div>
