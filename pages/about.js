@@ -49,7 +49,7 @@ export default function About({ isDarkBg, ref }) {
                 </div>
                 <div className="f-d-r">
                   <FaLaptopCode style={{'height':'3.5rem', 'width':'3rem', 'margin-right':'1rem'}}/>
-                  <p>SDE @ Zivame</p>
+                  <p>SDE @ AJIO</p>
                 </div>
                 <div className="f-d-r">
                   <IoMailUnreadOutline style={{'height':'3.5rem', 'width':'3rem', 'margin-right':'1rem'}}/>
@@ -87,7 +87,7 @@ export default function About({ isDarkBg, ref }) {
                   </div>
                   <div className="f-d-r al-center">
                     <FaLaptopCode style={{'height':'3.5rem', 'width':'3rem', 'margin-right':'1rem'}}/>
-                    <p>SDE @ Zivame</p>
+                    <p>SDE @ AJIO</p>
                   </div>
                   <div className="f-d-r al-center">
                     <IoMailUnreadOutline style={{'height':'3.5rem', 'width':'3rem', 'margin-right':'1rem'}}/>
