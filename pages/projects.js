@@ -1,5 +1,5 @@
 'use client'
-import React, { forwardRef } from "react";
+import React from "react";
 import { FaHandPointer } from "react-icons/fa";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { CiBank } from "react-icons/ci";
@@ -8,19 +8,17 @@ import { CiViewTimeline } from "react-icons/ci";
 import { TbMathXDivideY2 } from "react-icons/tb";
 import { MdOutlineContactPage } from "react-icons/md";
 
-const Projects = forwardRef((props) => {
-    const {isBlackBg, isDarkBg, ref} = props;
-    const headingDivColor = isBlackBg ? 'pd-underline-black' : 'pd-underline-white';
+export default function Projects({isDarkBg}) {
      return(
-        <div  className={`${isDarkBg ? 'yellow-bg' : 'blue-bg'} projects-parent-div`}  id='projects-parent-div' ref={ref}>
+        <div  className={`${isDarkBg ? 'yellow-bg' : 'blue-bg'} projects-parent-div`}  id='projects-parent-div'>
            
             <div className="p-all-10 mob-first-li" >
                 <div className="f-d-r al-center justify-sb fs-14">
-                    <div className={`${headingDivColor} project-icon-parent-div`}>
+                    <div className={`project-icon-parent-div`}>
                         <IoIosHeartEmpty style={{'height':'2.5rem', 'width':'2.5rem','margin-right':'1rem'}}/>
                         <h2 className={`project-heading-div project-name-div`}>Wishlist Widget with Zustand - Simplifying State Management</h2>
                     </div>
-                    <h2  className={`project-heading-div project-du-div ${headingDivColor}`}>Jan, 2024 - March, 2024</h2>
+                    <h2  className={`project-heading-div project-du-div `}>Jan, 2024 - March, 2024</h2>
                 </div>
                 <div className="margin-top-10">
                     <ul className="ul-disc w-78">
@@ -41,11 +39,11 @@ const Projects = forwardRef((props) => {
             </div>
             <div className="p-all-10">
                 <div className="f-d-r al-center justify-sb fs-14">
-                <div className={`${headingDivColor} project-icon-parent-div`}>
+                <div className={` project-icon-parent-div`}>
                     <CiBank style={{'height':'2.5rem', 'width':'2.5rem','margin-right':'1rem'}}/>
                     <h2 className="project-heading-div project-name-div">Bank Downtime Tracker Widget - jQuery </h2>
                     </div>
-                    <h2 className={`project-heading-div project-du-div ${headingDivColor}`}>Dec, 2023 - Nov, 2024</h2>
+                    <h2 className={`project-heading-div project-du-div`}>Dec, 2023 - Nov, 2024</h2>
                 </div>
                 <div className="margin-top-10">
                     <ul className="ul-disc w-78">
@@ -64,11 +62,11 @@ const Projects = forwardRef((props) => {
             </div>
             <div className="p-all-10">
                 <div className="f-d-r al-center justify-sb fs-14">
-                    <div className={`${headingDivColor} project-icon-parent-div`}>
+                    <div className={` project-icon-parent-div`}>
                         <RiSurveyLine style={{'height':'2.5rem', 'width':'2.5rem','margin-right':'1rem'}}/>
                         <h2 className="project-heading-div project-name-div">Survey Page of Delivered Orders : React JS SSR</h2>
                     </div>
-                    <h2 className={`project-heading-div project-du-div ${headingDivColor}`}>Oct, 2023 - Dec, 2024</h2>
+                    <h2 className={`project-heading-div project-du-div`}>Oct, 2023 - Dec, 2024</h2>
                 </div>
                 <div className="margin-top-10">
                     <ul className="ul-disc w-78">
@@ -90,11 +88,11 @@ const Projects = forwardRef((props) => {
             </div>
             <div className="p-all-10">
                 <div className="f-d-r al-center justify-sb fs-14">
-                <div className={`${headingDivColor} project-icon-parent-div`}>
+                <div className={` project-icon-parent-div`}>
                     <TbMathXDivideY2 style={{'height':'2.5rem', 'width':'2.5rem','margin-right':'1rem'}}/>
                     <h2 className="project-heading-div project-name-div">Growthbook Integration : A/B Testing Tool</h2>
                 </div>
-                    <h2 className={`project-heading-div project-du-div ${headingDivColor}`}>Apr, 2023 - May, 2023</h2>
+                    <h2 className={`project-heading-div project-du-div`}>Apr, 2023 - May, 2023</h2>
                 </div>
                 <div className=" margin-top-10">
                     <ul className="ul-disc w-78">
@@ -115,11 +113,11 @@ const Projects = forwardRef((props) => {
             </div>
             <div className="p-all-10">
                 <div className="f-d-r al-center justify-sb">
-                <div className={`${headingDivColor} project-icon-parent-div`}>
+                <div className={`project-icon-parent-div`}>
                     <CiViewTimeline style={{'height':'2.5rem', 'width':'2.5rem','margin-right':'1rem'}}/>
                     <h2 className="project-heading-div project-name-div">View similar Widget - React JS CSR</h2>
                 </div>
-                    <h2 className={`project-heading-div project-du-div ${headingDivColor}`}>June, 2022 - June, 2022</h2>
+                    <h2 className={`project-heading-div project-du-div`}>June, 2022 - June, 2022</h2>
                 </div>
                 <div className="margin-top-10">
                     <ul className="ul-disc w-78">
@@ -134,7 +132,7 @@ const Projects = forwardRef((props) => {
                         Additionally, I implemented robust error handling to gracefully manage scenarios like when no products match the selected filters.
                     </li>
                     <li className="m-all-10">
-                        Overall, the widget enhances the user experience by providing intuitive access to related products, regardless of device or filter criteria."
+                        Overall, the widget enhances the user experience by providing intuitive access to related products, regardless of device or filter criteria.
                     </li>
                     <li className="m-all-10 text-underline pointer f-d-r al-center">
                         <a target="_blank" href='https://www.zivame.com/rosaline-serenity-woven-pyjama-set-jet-set.html?productId=812403&trksrc=category&trkid=Nightwear&trkorder=best-sellers' 
@@ -147,11 +145,11 @@ const Projects = forwardRef((props) => {
             </div>
             <div className="p-all-10">
                 <div className="f-d-r al-center justify-sb">
-                <div className={`${headingDivColor} project-icon-parent-div`}>
+                <div className={`project-icon-parent-div`}>
                     <MdOutlineContactPage style={{'height':'2.5rem', 'width':'2.5rem','margin-right':'1rem'}}/>
                     <h2 className="project-heading-div project-name-div">Seller Registration System : Google Forms Integration</h2>
                 </div>
-                    <h2 className={`project-heading-div project-du-div ${headingDivColor}`}>Dec, 2023 - Feb, 2024</h2>
+                    <h2 className={`project-heading-div project-du-div`}>Dec, 2023 - Feb, 2024</h2>
                 </div>
                 <div className="margin-top-10">
                     <ul className="ul-disc w-78">
@@ -173,5 +171,4 @@ const Projects = forwardRef((props) => {
             </div>
         </div>
     )
-});
-export default Projects;
+};

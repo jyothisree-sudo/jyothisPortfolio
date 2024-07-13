@@ -6,8 +6,8 @@ import { MdPhoneAndroid } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
 import SkillsPage from "./skills";
 import { useEffect, useState } from "react";
-export default function About({isDarkBg, ref}) {
 
+export default function About({isDarkBg, ref}) {
    const [scrollY, setScrollY] = useState(0);
 
    useEffect(() => {
