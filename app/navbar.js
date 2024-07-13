@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { FaReact, FaBars } from 'react-icons/fa';
+import Image from 'next/image';
+import { FaBars } from 'react-icons/fa';
 import { HiX } from 'react-icons/hi';
-import { FaRegMoon } from "react-icons/fa";
-import { IoIosSunny } from "react-icons/io";
+import { FaRegMoon } from 'react-icons/fa';
+import { IoIosSunny } from 'react-icons/io';
 
 export default function Navbar({ onHandleNavbarClick, activeTab, onHandleDarkModeClick, isDarkBg, handleClickNavMobileIcon, toggledIcon }) {
   const [isMobileScreen, setIsMobileScreen] = useState(false);
@@ -25,11 +26,13 @@ export default function Navbar({ onHandleNavbarClick, activeTab, onHandleDarkMod
     <nav className={`${isDarkBg ? 'nav-yellow-bg' : 'nav-blue-bg'}`}>
       <Link href="/" id="home" legacyBehavior>
         <a className="navbar_container_logo">
-          <img
+          <Image
             src={isDarkBg ? 'https://port2bucket.s3.amazonaws.com/yellow-jo-logo.svg' : 'https://port2bucket.s3.amazonaws.com/jo_logo.svg'}
             className='logo-div'
             onClick={() => onHandleNavbarClick('logo')}
             alt="Logo"
+            width={100} // specify the width of the image
+            height={50} // specify the height of the image
           />
         </a>
       </Link>
@@ -65,4 +68,3 @@ export default function Navbar({ onHandleNavbarClick, activeTab, onHandleDarkMod
     </nav>
   );
 }
-
