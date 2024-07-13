@@ -1,8 +1,7 @@
-'use client';
-import React, {useState} from 'react';
+
+import React, { useState } from 'react';
 import ParticlesComponent from './partcilesComponent';
 import { Animate } from 'react-simple-animate';
-
 
 export default function HomeComponent({ isDarkBg }) {
   const [isDownloading, setIsDownloading] = useState(false);
@@ -22,18 +21,17 @@ export default function HomeComponent({ isDarkBg }) {
   const onHandleHireme = () => {
     const email = 'jyothisree327@gmail.com';
     const subject = 'Job Opportunity: [Position] at [Company]';
-    const body = `  Dear Jyothisree,
+    const body = `Dear Jyothisree,
   I am interested in discussing a job opportunity with you for the [Position] role at [Company].
   Please let me know your availability for a meeting.
-
+      
   Thank you,
   [Your Name]
   [Your Contact Information]`;
-  
+
     const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.open(gmailLink, '_blank');
   };
-  
 
   return (
     <div className={`home-parent-div ${isDarkBg ? 'yellow-c' : 'blue-c'} position-fixed`}>
@@ -47,7 +45,7 @@ export default function HomeComponent({ isDarkBg }) {
         >
           <div>
             <h1>
-              Hello, I'm Jyothisree
+              Hello, I&apos;m Jyothisree
               <br />
               Front End Developer
             </h1>
@@ -60,8 +58,8 @@ export default function HomeComponent({ isDarkBg }) {
           play
           duration={1}
           delay={0}
-          start={{ transform: "translateY(550px)" }}
-          end={{ transform: "translatex(0px)" }}
+          start={{ transform: 'translateY(550px)' }}
+          end={{ transform: 'translateX(0px)' }}
         >
           <button className={`home-btn ${isDarkBg ? '' : 'home-btn-yellow'}`} onClick={onHandleHireme}>HIRE ME</button>
         </Animate>
@@ -69,8 +67,8 @@ export default function HomeComponent({ isDarkBg }) {
           play
           duration={1}
           delay={0}
-          start={{ transform: "translateY(550px)" }}
-          end={{ transform: "translatex(0px)" }}
+          start={{ transform: 'translateY(550px)' }}
+          end={{ transform: 'translateX(0px)' }}
         >
           <button className={`home-btn ${isDarkBg ? '' : 'home-btn-yellow'}`} onClick={onHandleDownloadCV} disabled={isDownloading}>
             {isDownloading ? 'Downloading...' : 'Download CV'}
@@ -81,3 +79,4 @@ export default function HomeComponent({ isDarkBg }) {
     </div>
   );
 }
+
